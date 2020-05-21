@@ -7,12 +7,13 @@
         
         <link rel="stylesheet" href="/CSS/estilos.css">
         <link rel="icon" href="/images/html5.ico">
+        <script src="/JS/script.js"></script>
     </head>
     <body>
         <div id="Cajero">
             <section id="Superior">
                 <section id="Botonizq" class="cajbot">
-                    <button id="flechaizq1" class="botones">
+                    <button id="flechaizq1" class="botones" onclick="cambiar_pantalla()">
                         <img class="flecha" src="/images/flechaizq.png" alt="">
                     </button>
                     <button id="flechaizq2" class="botones"id="flechaizq2" class="botones">
@@ -26,7 +27,119 @@
                     </button>
                 </section>
                 <section id="Pantalla">
-
+                    <section id="Bienvenida" class="Pantallas">
+                        <h2 style="
+                        font-family:  Helvetica, sans-serif;
+                        font-size: 20px;
+                        margin-top: 6px;"
+                        class="textos"
+                        >¡Bievenido al banco!</h2>
+                        <p style="
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 19px;"
+                        class="textos"
+                        >Por favor digite su clave.</p>
+                        <input class="textos" id="clave"type="password" disabled placeholder="********">
+                    </section>
+                    <section id="Menu" class="Pantallas">
+                        <div class="cajapantsup">
+                        <H2 style="text-align: center;
+                        width: 100%;"
+                        >Menu Principal</H2>
+                        </div>
+                        <div class="cajatexopc">
+                            <div class="triangulos">
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                            </div>
+                            <div id="cajatextd" class="cajatextm">
+                                <P class="textopc , textopcd">RETIRO</P>
+                                <P class="textopc , textopcd">CONSULTAS</P>
+                                <P class="textopc , textopcd">OPERACIONES</P>
+                                <P class="textopc , textopcd"></P>
+                            </div>
+                            <div id="cajatexti" class="cajatextm">
+                                <P class="textopc , textopci" 
+                                style="margin-right: 30px;">TRANSFERENCIA</P>
+                                <P class="textopc , textopci"></P>
+                                <P class="textopc , textopci">ULTIMOS MOVIMIENTOS</P>
+                                <P class="textopc , textopci"></P>
+                            </div>
+                            <div class="triangulos">
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <section id="Retiromenu" class="Pantallas">
+                        <div class="cajapantsup">
+                            <H2 style="text-align: center;
+                            width: 100%;"
+                            >RETIRO</H2>
+                        </div>
+                        <div class="cajatexopc">
+                            <div class="triangulos">
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                            </div>
+                            <div id="cajatextd" class="cajatextm">
+                                <P class="textopc , textopcd">RETIRO SOLES</P>
+                                <P class="textopc , textopcd"></P>
+                                <P class="textopc , textopcd"></P>
+                                <P class="textopc , textopcd"></P>
+                            </div>
+                            <div id="cajatexti" class="cajatextm">
+                                <P class="textopc , textopci">RETIRO DOLARES</P>
+                                <P class="textopc , textopci"></P>
+                                <P class="textopc , textopci"></P>
+                                <P class="textopc , textopci">CANCELAR</P>
+                            </div>
+                            <div class="triangulos">
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Retiro" class="Pantallas">
+                        <div class="cajapantsup">
+                            <H2 style="text-align: center;
+                            width: 100%;"
+                            >RETIRO</H2>
+                        </div>
+                        <div class="cajatexopc">
+                            <div class="triangulos">
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                                <div class="trianguloiz"></div>
+                            </div>
+                            <div id="cajatexti" class="cajatextm">
+                                <P class="textopc , textopcd">S/ 20</P>
+                                <P class="textopc , textopcd">S/ 150</P>
+                                <P class="textopc , textopcd">S/ 300</P>
+                                <P class="textopc , textopcd"></P>
+                            </div>
+                            <div id="cajatextd" class="cajatextm">
+                                <P class="textopc , textopci">S/ 100</P>
+                                <P class="textopc , textopci">S/ 200</P>
+                                <P class="textopc , textopci">OTRAS CANTIDADES</P>
+                                <P class="textopc , textopci">CANCELAR</P>
+                            </div>
+                            <div class="triangulos">
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                                <div class="triangulode"></div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
                 <section id="Botonde" class="cajbot">
                     <button id="flechader1" class="botones">
@@ -59,28 +172,28 @@
                     <button class="botnumerico">.</button>
                 </section>
                 <section id="Botopcion">
-                    <button id="Botcancel" class="botopciones">Cancel</button>
-                    <button id="Botclear" class="botopciones">Clear</button>
-                    <button id="Botok" class="botopciones">Ok</button>
+                    <button id="Botcancel" class="botopciones">CANCEL</button>
+                    <button id="Botclear" class="botopciones">CLEAR</button>
+                    <button id="Botok" class="botopciones">OK</button>
                     <button id="Botvacio" class="botopciones"></button>
                 </section>
                 <section id="Etiquetas">
-                    <article class="artpeq">
+                    <div class="artpeq">
                         <p class="Textos">CARD</p>
                         <hr>
-                    </article>
-                    <article class="artpeq">
+                    </div>
+                    <div class="artpeq">
                         <p class="Textos">RECEIPT</p>
                         <hr>
-                    </article>
-                    <article class="artlarg">
+                    </div>
+                    <div class="artlarg">
                         <p class="Textos">CASH</p>
                         <hr>
-                    </article>
-                    <article class="artlarg">
+                    </div>
+                    <div class="artlarg">
                         <p class="Textos">DEPOSIT</p>
                         <hr>
-                    </article>
+                    </div>
                 </section>
             </section>
         </div>

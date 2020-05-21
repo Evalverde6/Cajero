@@ -1,9 +1,11 @@
 
+*{
+    margin: 0;
+}
 body{
     background-color: darkgray;
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -27,16 +29,15 @@ body{
     border-width: 5px;
     border-style: solid;
     border-color: rgb(109,110,112);
+    display: flex;
 }
 .cajbot{
     margin-top: 78px;
     width: 41px;
     height: 119px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 #Botonizq{
     margin-left: 10px;
@@ -48,13 +49,13 @@ body{
 }
 .botones{
     width: 36px;
-    height: 21px;
-    margin-top: 8.7px;
-    
+    height: 21px; 
     background: rgb(44, 44, 44);
     border-radius: 5px;
     border-style: solid;
     border-color:  rgb(44, 44, 50);
+    
+    margin-top: 8.7px; 
 
     display: flex;
     flex-direction: column;
@@ -125,40 +126,142 @@ body{
     background-color: rgb(106, 106, 106);
 }
 #Etiquetas{
-    width: 214px;
-    height: 167px;
-
+    margin-top: 6px;
+    margin-left: 4px;
+    width: 208px;
+    height: 165px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    color:white
+    color:white;
 }
 .artpeq{
-    width: 89px;
-    height: 41px;
-    margin-left: 10px;
-    margin-right: 8px;
-    flex: auto;
-    justify-content: left;
+    width: 97px;
+    height: 30px;
+    margin-left: 7px;
+    /*margin-right: 7px;*/
 }
 .artlarg{
-    width: 194px;
-    height: 41px;
-    justify-content: left;
-
+    width: 201px;
+    height: 30px;
+    margin-left: 7px;
+    /*margin-right: 7px;*/
 }
 .Textos{
+    margin-left: 6px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 hr{ 
-    width: 90%;
+    margin-bottom: 0;
     height: 5px;
     background-color: rgb(44, 44, 50);
     border-radius: 1px;
     border-width: 6px;
     border-style: solid;
     border-color: rgb(114, 114, 114);
+    flex:none;
+}
+.Pantallas{
+    width: 100%;
+    height: 100%;
+}
+#Bienvenida{
+    display: none;
+}
+#Menu{
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Retiromenu{
+    display: flex;    
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+#Retiro{
+    display: flex;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#clave{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.textos{
+    margin-left: 6px;
+    margin-top: 2px;
+}
+.cajapantsup{
+    width: 100%;
+    height: 70px;
+}
+.cajatexopc{
+    width: 100%;
+    height: 130px;
+    display: flex;
+}
+/*.cajatextm{
+    width: 142.5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+#cajatexti{
+    width: 142.5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#cajatextd{
+    width: 142.5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
+.textopc{
+    width: 90px;
+    height: 26px;
+    margin-top: 3.5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.textopcd{
+    text-align: left;
+    margin-right: 20px;
+}
+.textopci{
+    margin-left: 20px;
+    text-align: right;
+}
+
+p{
+    font-size: 13.5px;
+}
+.triangulode {
+    width: 0; 
+    height: 0; 
+    border-right: 25px solid #f0ad4e;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent;
+    margin-top: 3.5px;
+}
+.trianguloiz {
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid #f0ad4e;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent;
+    margin-top: 3.5px;
 }
