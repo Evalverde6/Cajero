@@ -13,7 +13,7 @@
         <div id="Cajero">
             <section id="Superior">
                 <section id="Botonizq" class="cajbot">
-                    <button id="flechaizq1" class="botones" onclick="cambiar_pantalla()">
+                    <button id="flechaizq1" class="botones" onclick="cambiar_pantalla(1,1)">
                         <img class="flecha" src="/images/flechaizq.png" alt="">
                     </button>
                     <button id="flechaizq2" class="botones"id="flechaizq2" class="botones">
@@ -39,7 +39,8 @@
                         font-size: 19px;"
                         class="textos"
                         >Por favor digite su clave.</p>
-                        <input class="textos" id="clave"type="password" disabled placeholder="********">
+                        <input class="textos" id="clave"type="password" disabled>
+                        <p id="respuesta"></p>
                     </section>
                     <section id="Menu" class="Pantallas">
                         <div class="cajapantsup">
@@ -53,15 +54,15 @@
                                 <div class="trianguloiz"></div>
                                 <div class="trianguloiz"></div>
                             </div>
-                            <div id="cajatextd" class="cajatextm">
+                            <div id="cajatexti" class="cajatextm">
                                 <P class="textopc , textopcd">RETIRO</P>
                                 <P class="textopc , textopcd">CONSULTAS</P>
                                 <P class="textopc , textopcd">OPERACIONES</P>
                                 <P class="textopc , textopcd"></P>
                             </div>
-                            <div id="cajatexti" class="cajatextm">
+                            <div id="cajatextd" class="cajatextm">
                                 <P class="textopc , textopci" 
-                                style="margin-right: 30px;">TRANSFERENCIA</P>
+                                style="margin-right: 15px;">TRANSFERENCIA</P>
                                 <P class="textopc , textopci"></P>
                                 <P class="textopc , textopci">ULTIMOS MOVIMIENTOS</P>
                                 <P class="textopc , textopci"></P>
@@ -85,15 +86,14 @@
                                 <div class="trianguloiz"></div>
                                 <div class="trianguloiz"></div>
                                 <div class="trianguloiz"></div>
-                                <div class="trianguloiz"></div>
                             </div>
-                            <div id="cajatextd" class="cajatextm">
+                            <div id="cajatexti" class="cajatextm">
                                 <P class="textopc , textopcd">RETIRO SOLES</P>
                                 <P class="textopc , textopcd"></P>
                                 <P class="textopc , textopcd"></P>
                                 <P class="textopc , textopcd"></P>
                             </div>
-                            <div id="cajatexti" class="cajatextm">
+                            <div id="cajatextd" class="cajatextm">
                                 <P class="textopc , textopci">RETIRO DOLARES</P>
                                 <P class="textopc , textopci"></P>
                                 <P class="textopc , textopci"></P>
@@ -115,7 +115,6 @@
                         </div>
                         <div class="cajatexopc">
                             <div class="triangulos">
-                                <div class="trianguloiz"></div>
                                 <div class="trianguloiz"></div>
                                 <div class="trianguloiz"></div>
                                 <div class="trianguloiz"></div>
@@ -158,23 +157,23 @@
             </section>
             <section id="Inferior">
                 <section id="Botnum">
-                    <button class="botnumerico">1</button>
-                    <button class="botnumerico">2</button>
-                    <button class="botnumerico">3</button>
-                    <button class="botnumerico">4</button>
-                    <button class="botnumerico">5</button>
-                    <button class="botnumerico">6</button>
-                    <button class="botnumerico">7</button>
-                    <button class="botnumerico">8</button>
-                    <button class="botnumerico">9</button>
+                    <button class="botnumerico" onclick="boton(1)">1</button>
+                    <button class="botnumerico" onclick="boton(2)">2</button>
+                    <button class="botnumerico" onclick="boton(3)">3</button>
+                    <button class="botnumerico" onclick="boton(4)">4</button>
+                    <button class="botnumerico" onclick="boton(5)">5</button>
+                    <button class="botnumerico" onclick="boton(6)">6</button>
+                    <button class="botnumerico" onclick="boton(7)">7</button>
+                    <button class="botnumerico" onclick="boton(8)">8</button>
+                    <button class="botnumerico" onclick="boton(9)">9</button>
                     <button class="botnumerico"></button>
-                    <button class="botnumerico">0</button>
+                    <button class="botnumerico" onclick="boton(0)">0</button>
                     <button class="botnumerico">.</button>
                 </section>
                 <section id="Botopcion">
                     <button id="Botcancel" class="botopciones">CANCEL</button>
                     <button id="Botclear" class="botopciones">CLEAR</button>
-                    <button id="Botok" class="botopciones">OK</button>
+                    <button id="Botok" class="botopciones" onclick="ok()">OK</button>
                     <button id="Botvacio" class="botopciones"></button>
                 </section>
                 <section id="Etiquetas">
